@@ -2,12 +2,28 @@
 <html>
 <head>
     <style type="text/css">
+		/* Ejemplo 1 */
 		.rotate:hover{
 				-webkit-transform: rotateZ(-30deg);
 				-ms-transform: rotateZ(-30deg);
 				transform: rotateZ(-30deg);
 		}
+		
+		/*Ejemplo 2*/
+		#pacman {
+		  width: 0px;
+		  height: 0px;
+		  border-right: 60px solid transparent;
+		  border-top: 60px solid blue;
+		  border-left: 60px solid blue;
+		  border-bottom: 60px solid blue;
+		  border-top-left-radius: 60px;
+		  border-top-right-radius: 60px;
+		  border-bottom-left-radius: 60px;
+		  border-bottom-right-radius: 60px;
+		}
 
+		/* Ejemplo 3 */
 		ul li a {
 			color: green;
 			text-decoration: none;
@@ -29,18 +45,79 @@
 				color: #666666;
 			}
 		}
+		
+		/*Ejemplo 4*/
+		.preloader1 {
+		   width:40px;
+		   height:40px;
+		   display:inline-block;
+		   padding:0px;
+		   text-align:left;
+		   -webkit-animation:preloader1 1.4s linear infinite;
+		   animation:preloader1 1.4s linear infinite;
+		}
+		.preloader1 span {
+		   position:absolute;
+		   vertical-align:top;
+		   border-radius:100%;
+		   background:#000000;
+		   display:inline-block;
+		   width:8px;
+		   height:8px;
+		   margin-left:16px;
+		   transform-origin:center 20px;
+		   -webkit-transform-origin:center 20px;
+		}
+		.preloader1 span:nth-child(2) {transform: rotate(36deg);-webkit-transform: rotate(36deg); opacity:0.1;}
+		.preloader1 span:nth-child(3) {transform: rotate(72deg);-webkit-transform: rotate(72deg); opacity:0.2;}
+		.preloader1 span:nth-child(4) {transform: rotate(108deg);-webkit-transform: rotate(108deg); opacity:0.3;}
+		.preloader1 span:nth-child(5) {transform: rotate(144deg);-webkit-transform: rotate(144deg); opacity:0.4;}
+		.preloader1 span:nth-child(6) {transform: rotate(180deg);-webkit-transform: rotate(180deg); opacity:0.5;}
+		.preloader1 span:nth-child(7) {transform: rotate(216deg);-webkit-transform: rotate(216deg); opacity:0.6;}
+		.preloader1 span:nth-child(8) {transform: rotate(252deg);-webkit-transform: rotate(252deg); opacity:0.7;}
+		.preloader1 span:nth-child(9) {transform: rotate(288deg);-webkit-transform: rotate(288deg); opacity:0.8;}
+		.preloader1 span:nth-child(10) {transform: rotate(324deg);-webkit-transform: rotate(324deg); opacity:0.9;}
+		@keyframes preloader1 {
+		   from {transform: rotate(0deg);}
+		   to {transform: rotate(360deg);}
+		}
+		@-webkit-keyframes preloader1 {
+		   from {-webkit-transform: rotate(0deg);}
+		   to {-webkit-transform: rotate(360deg);}
+		}
 	</style>
 </head>
 <body>
 	<h1>Ejemplos de CSS 3</h1>
+	
+	<h3>Ejemplos 1</h3>
 	<div>
 		<img class="rotate" src="media/softtek.jpg" width="300" height="200" alt="foto"/>
 	</div>
+	
+	<h3>Ejemplos 2</h3>
+	<div id="pacman"></div>
+	
+	<h3>Ejemplos 3</h3>
 	<div>
 		<ul>
 		  <li><a href="mailto:alan.noboa@softtek.com">Alan Noboa</a></li>
 		  <li><a href="mailto:taylor.switch@softtek.com">Taylor Switch</a></li>
 		</ul>
+	</div>
+	
+	<h3>Ejemplos 4</h3>
+	<div class="preloader1">
+	   <span></span>
+	   <span></span>
+	   <span></span>
+	   <span></span>
+	   <span></span>
+	   <span></span>
+	   <span></span>
+	   <span></span>
+	   <span></span>
+	   <span></span>
 	</div>
 </body>
 </html>
