@@ -8,6 +8,7 @@ header {
 	background:#286af0;
 	padding:10px 0px;
 }
+
 section {
 	width: 79%;
 	background: #ccc;
@@ -25,6 +26,7 @@ aside {
 	/*Si quisieramos ocultar el contenido relacionado pondriamos visibility a hidden*/
 	/*visibility: hidden;*/
 }
+
 footer {
 	position: relative;
 	margin-top: -50px;
@@ -35,6 +37,7 @@ footer {
 	text-align: center;
 	color: #fff;
 }
+
 figure {
 	display: table; margin: 0 auto;
 }
