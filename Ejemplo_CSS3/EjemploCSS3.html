@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style type="text/css">
+		.rotate:hover{
+				-webkit-transform: rotateZ(-30deg);
+				-ms-transform: rotateZ(-30deg);
+				transform: rotateZ(-30deg);
+		}
+
+		ul li a {
+			color: green;
+			text-decoration: none;
+			padding: 3px; 
+			display: block;
+		}
+
+		@media screen and (max-width: 699px) and (min-width: 520px) {
+			ul li a {
+				padding-left: 30px;
+				background: url(media/email-icon.png) left center no-repeat;
+			}
+		}
+
+		@media screen and (max-width: 1000px) and (min-width: 700px) {
+			ul li a:before {
+				content: "Aparece la leyenda Email: ";
+				font-style: italic;
+				color: #666666;
+			}
+		}
+	</style>
+</head>
+<body>
+	<h1>Ejemplos de CSS 3</h1>
+	<div>
+		<img class="rotate" src="media/softtek.jpg" width="300" height="200" alt="foto"/>
+	</div>
+	<div>
+		<ul>
+		  <li><a href="mailto:alan.noboa@softtek.com">Alan Noboa</a></li>
+		  <li><a href="mailto:taylor.switch@softtek.com">Taylor Switch</a></li>
+		</ul>
+	</div>
+</body>
+</html>
